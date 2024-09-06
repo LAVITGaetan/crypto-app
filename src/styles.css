@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-background : #141414;
+    --clr-primary : #27ceba;
+    --clr-background-secondary : #121212;
+    --clr-accent : #00ffe167;
+    --clr-text : #ffffff;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: var(--clr-background);
+    color: var(--clr-text);
+    font-family: Montserrat;
+}
