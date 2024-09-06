@@ -1,123 +1,140 @@
 <div class="crypto">
- <!-- Bitcoin -->
-<div class="crypto-item">
-    <div class="item-figure">
-        <img src="../../../assets/img/bitcoin-icon.svg" width="48px" height="48px" alt="Bitcoin" class="item-image">
+    <!-- Bitcoin -->
+    <div class="crypto-item">
+        <div class="item-figure">
+            <img src="../../../assets/img/bitcoin-icon.svg" width="48px" height="48px" alt="Bitcoin" class="item-image">
+        </div>
+        <div class="item2"><h3 class="item-name">Bitcoin</h3></div><div class="item3">
+        <div class="item-price" *ngIf="apiService.api_data().BTC">{{apiService.api_data().BTC.EUR | json}} €</div></div>
+        <!-- <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse"
+                class="rate-image"></div> -->
+        <div class="item4"><div class="item-info">?</div></div>
     </div>
-    <h3 class="item-name">Bitcoin</h3>
-    <div class="item-price">70 €</div>
-    <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse" class="rate-image"></div>
-    <div class="item-info">?</div>
-</div>
 
-<!-- Ethereum -->
-<div class="crypto-item">
-    <div class="item-figure">
-        <img src="../../../assets/img/ethereum-icon.png" width="48px" height="48px" alt="Ethereum" class="item-image">
+    <!-- Ethereum -->
+    <div class="crypto-item">
+        <div class="item-figure">
+            <img src="../../../assets/img/ethereum-icon.png" width="48px" height="48px" alt="Ethereum"
+                class="item-image">
+        </div>
+        <div class="item2"><h3 class="item-name">Ethereum</h3></div><div class="item3">
+        <div class="item-price" *ngIf="apiService.api_data().ETH">{{apiService.api_data().ETH.EUR | json}} €</div></div>
+        <!-- <div class="item-rate"><img src="../../../assets/img/trend-down.png" width="24px" height="24px" alt="baisse"
+                class="rate-image"></div> -->
+        <div class="item4"><div class="item-info">?</div></div>
     </div>
-    <h3 class="item-name">Ethereum</h3>
-    <div class="item-price">70 €</div>
-    <div class="item-rate"><img src="../../../assets/img/trend-down.png" width="24px" height="24px" alt="baisse" class="rate-image"></div>
-    <div class="item-info">?</div>
-</div>
 
-<!-- Binance Coin -->
-<div class="crypto-item">
-    <div class="item-figure">
-        <img src="../../../assets/img/binance-icon.png" width="48px" height="48px" alt="Binance Coin" class="item-image">
+    <!-- Binance Coin -->
+    <div class="crypto-item">
+        <div class="item-figure">
+            <img src="../../../assets/img/binance-icon.png" width="48px" height="48px" alt="Binance Coin"
+                class="item-image">
+        </div>
+        <div class="item2"><h3 class="item-name">Binance Coin</h3></div><div class="item3">
+        <div class="item-price" *ngIf="apiService.api_data().BNB">{{apiService.api_data().BNB.EUR | json}} €</div></div>
+        <!-- <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse"
+                class="rate-image"></div> -->
+        <div class="item4"><div class="item-info">?</div></div>
     </div>
-    <h3 class="item-name">Binance Coin</h3>
-    <div class="item-price">70 €</div>
-    <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse" class="rate-image"></div>
-    <div class="item-info">?</div>
-</div>
 
-<!-- Cardano -->
-<div class="crypto-item">
-    <div class="item-figure">
-        <img src="../../../assets/img/cardano-icon.webp" width="48px" height="48px" alt="Cardano" class="item-image">
+    <!-- Cardano -->
+    <div class="crypto-item">
+        <div class="item-figure">
+            <img src="../../../assets/img/cardano-icon.webp" width="48px" height="48px" alt="Cardano"
+                class="item-image">
+        </div>
+        <div class="item2"><h3 class="item-name">Cardano</h3></div><div class="item3">
+        <div class="item-price" *ngIf="apiService.api_data().ADA">{{apiService.api_data().ADA.EUR | json}} €</div></div>
+        <!-- <div class="item-rate"><img src="../../../assets/img/trend-down.png" width="24px" height="24px" alt="baisse"
+                class="rate-image"></div> -->
+        <div class="item4"><div class="item-info">?</div></div>
     </div>
-    <h3 class="item-name">Cardano</h3>
-    <div class="item-price">70 €</div>
-    <div class="item-rate"><img src="../../../assets/img/trend-down.png" width="24px" height="24px" alt="baisse" class="rate-image"></div>
-    <div class="item-info">?</div>
-</div>
 
-<!-- Solana -->
-<div class="crypto-item">
-    <div class="item-figure">
-        <img src="../../../assets/img/solana-icon.png" width="48px" height="48px" alt="Solana" class="item-image">
+    <!-- Solana -->
+    <div class="crypto-item">
+        <div class="item-figure">
+            <img src="../../../assets/img/solana-icon.png" width="48px" height="48px" alt="Solana" class="item-image">
+        </div>
+        <div class="item2"><h3 class="item-name">Solana</h3></div><div class="item3">
+        <div class="item-price" *ngIf="apiService.api_data().SOL">{{apiService.api_data().SOL.EUR | json}} €</div></div>
+        <!-- <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse"
+                class="rate-image"></div> -->
+        <div class="item4"><div class="item-info">?</div></div>
     </div>
-    <h3 class="item-name">Solana</h3>
-    <div class="item-price">70 €</div>
-    <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse" class="rate-image"></div>
-    <div class="item-info">?</div>
-</div>
 
-<!-- Polkadot -->
-<div class="crypto-item">
-    <div class="item-figure">
-        <img src="../../../assets/img/polkadot-icon.png" width="48px" height="48px" alt="Polkadot" class="item-image">
+    <!-- Polkadot -->
+    <div class="crypto-item">
+        <div class="item-figure">
+            <img src="../../../assets/img/polkadot-icon.png" width="48px" height="48px" alt="Polkadot"
+                class="item-image">
+        </div>
+        <div class="item2"><h3 class="item-name">Polkadot</h3></div><div class="item3">
+        <div class="item-price" *ngIf="apiService.api_data().DOT">{{apiService.api_data().DOT.EUR | json}} €</div></div>
+        <!-- <div class="item-rate"><img src="../../../assets/img/trend-down.png" width="24px" height="24px" alt="baisse"
+                class="rate-image"></div> -->
+        <div class="item4"><div class="item-info">?</div></div>
     </div>
-    <h3 class="item-name">Polkadot</h3>
-    <div class="item-price">70 €</div>
-    <div class="item-rate"><img src="../../../assets/img/trend-down.png" width="24px" height="24px" alt="baisse" class="rate-image"></div>
-    <div class="item-info">?</div>
-</div>
 
-<!-- Litecoin -->
-<div class="crypto-item">
-    <div class="item-figure">
-        <img src="../../../assets/img/litecoin-icon.png" width="48px" height="48px" alt="Litecoin" class="item-image">
+    <!-- Litecoin -->
+    <div class="crypto-item">
+        <div class="item-figure">
+            <img src="../../../assets/img/litecoin-icon.png" width="48px" height="48px" alt="Litecoin"
+                class="item-image">
+        </div>
+        <div class="item2"><h3 class="item-name">Litecoin</h3></div><div class="item3">
+        <div class="item-price" *ngIf="apiService.api_data().LTC">{{apiService.api_data().LTC.EUR | json}} €</div></div>
+        <!-- <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse"
+                class="rate-image"></div> -->
+        <div class="item4"><div class="item-info">?</div></div>
     </div>
-    <h3 class="item-name">Litecoin</h3>
-    <div class="item-price">70 €</div>
-    <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse" class="rate-image"></div>
-    <div class="item-info">?</div>
-</div>
 
-<!-- Chainlink -->
-<div class="crypto-item">
-    <div class="item-figure">
-        <img src="../../../assets/img/chainlink-icon.png" width="48px" height="48px" alt="Chainlink" class="item-image">
+    <!-- Chainlink -->
+    <div class="crypto-item">
+        <div class="item-figure">
+            <img src="../../../assets/img/chainlink-icon.png" width="48px" height="48px" alt="Chainlink"
+                class="item-image">
+        </div>
+        <div class="item2"><h3 class="item-name">Chainlink</h3></div><div class="item3">
+        <div class="item-price" *ngIf="apiService.api_data().LINK">{{apiService.api_data().LINK.EUR | json}} €</div></div>
+        <!-- <div class="item-rate"><img src="../../../assets/img/trend-down.png" width="24px" height="24px" alt="baisse"
+                class="rate-image"></div> -->
+        <div class="item4"><div class="item-info">?</div></div>
     </div>
-    <h3 class="item-name">Chainlink</h3>
-    <div class="item-price">70 €</div>
-    <div class="item-rate"><img src="../../../assets/img/trend-down.png" width="24px" height="24px" alt="baisse" class="rate-image"></div>
-    <div class="item-info">?</div>
-</div>
 
-<!-- Stellar -->
-<div class="crypto-item">
-    <div class="item-figure">
-        <img src="../../../assets/img/ripple-icon.webp" width="48px" height="48px" alt="Stellar" class="item-image">
+    <!-- Ripple -->
+    <div class="crypto-item">
+        <div class="item-figure">
+            <img src="../../../assets/img/ripple-icon.webp" width="48px" height="48px" alt="Stellar" class="item-image">
+        </div>
+        <div class="item2"><h3 class="item-name">Ripple</h3></div><div class="item3">
+        <div class="item-price" *ngIf="apiService.api_data().BTC">{{apiService.api_data().XRP.EUR | json}} €</div></div>
+        <!-- <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse"
+                class="rate-image"></div> -->
+        <div class="item4"><div class="item-info">?</div></div>
     </div>
-    <h3 class="item-name">Ripple</h3>
-    <div class="item-price">70 €</div>
-    <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse" class="rate-image"></div>
-    <div class="item-info">?</div>
-</div>
 
-<!-- Tezos -->
-<div class="crypto-item">
-    <div class="item-figure">
-        <img src="../../../assets/img/tezos-icon.png" width="48px" height="48px" alt="Tezos" class="item-image">
+    <!-- Tezos -->
+    <div class="crypto-item">
+        <div class="item-figure">
+            <img src="../../../assets/img/tezos-icon.png" width="48px" height="48px" alt="Tezos" class="item-image">
+        </div>
+        <div class="item2"><h3 class="item-name">Tezos</h3></div><div class="item3">
+        <div class="item-price" *ngIf="apiService.api_data().BTC">{{apiService.api_data().XTZ.EUR | json}} €</div></div>
+        <!-- <div class="item-rate"><img src="../../../assets/img/trend-down.png" width="24px" height="24px" alt="baisse"
+                class="rate-image"></div> -->
+        <div class="item4"><div class="item-info">?</div></div>
     </div>
-    <h3 class="item-name">Tezos</h3>
-    <div class="item-price">70 €</div>
-    <div class="item-rate"><img src="../../../assets/img/trend-down.png" width="24px" height="24px" alt="baisse" class="rate-image"></div>
-    <div class="item-info">?</div>
-</div>
 
-<!-- Uniswap -->
-<div class="crypto-item">
-    <div class="item-figure">
-        <img src="../../../assets/img/uniswap-icon.png" width="48px" height="48px" alt="Uniswap" class="item-image">
+    <!-- Uniswap -->
+    <div class="crypto-item">
+        <div class="item-figure">
+            <img src="../../../assets/img/uniswap-icon.png" width="48px" height="48px" alt="Uniswap" class="item-image">
+        </div>
+        <div class="item2"><h3 class="item-name">Uniswap</h3></div><div class="item3">
+        <div class="item-price" *ngIf="apiService.api_data().BTC">{{apiService.api_data().UNI.EUR | json}} €</div></div>
+        <!-- <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse"
+                class="rate-image"></div> -->
+        <div class="item4"><div class="item-info">?</div></div>
     </div>
-    <h3 class="item-name">Uniswap</h3>
-    <div class="item-price">70 €</div>
-    <div class="item-rate"><img src="../../../assets/img/trend-up.png" width="24px" height="24px" alt="hausse" class="rate-image"></div>
-    <div class="item-info">?</div>
-</div>
 
 </div>
