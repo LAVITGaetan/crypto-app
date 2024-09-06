@@ -47,6 +47,20 @@
     justify-content: center;
 }
 
+.loading-spinner {
+    width:  32px;
+    height: 32px;
+    border: 5px solid white; 
+    border-top: 5px solid var(--clr-primary); 
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 @media screen and (max-width: 1400px) {
     .crypto {
         padding: 48px 10%;
