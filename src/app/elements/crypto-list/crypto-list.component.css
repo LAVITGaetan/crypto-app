@@ -44,7 +44,6 @@
 .item1, .item2, .item3, .item4 {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .loading-spinner {
