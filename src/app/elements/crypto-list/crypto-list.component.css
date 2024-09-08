@@ -41,24 +41,32 @@
     color: var(--clr-background);
 }
 
-.item1, .item2, .item3, .item4 {
+.item1,
+.item2,
+.item3,
+.item4 {
     display: flex;
     align-items: center;
 }
 
 .loading-spinner {
-    width:  32px;
+    width: 32px;
     height: 32px;
-    border: 5px solid white; 
-    border-top: 5px solid var(--clr-primary); 
+    border: 5px solid white;
+    border-top: 5px solid var(--clr-primary);
     border-radius: 50%;
     animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 @media screen and (max-width: 1400px) {
     .crypto {
@@ -75,10 +83,29 @@
 
 @media screen and (max-width: 900px) {
     .crypto {
-        padding:48px;
+        padding: 48px;
     }
 }
 
+
+@media screen and (max-width: 600px) {
+
+    .crypto-item {
+        grid-template-columns: 64px 1fr 128px;
+        grid-template-rows: 1fr;
+        gap: 0 16px;
+        position: relative;
+    }
+    .item-info {
+position: absolute;
+top: -16px;
+right: -16px;
+    }
+
+    .item-name {
+        font-size: 14px;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .crypto {
